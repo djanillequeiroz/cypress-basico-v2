@@ -136,7 +136,7 @@ it('acessa a página da política de privacidade removendo o target e então cli
     cy.get('a').invoke('removeAttr', 'target')
     .click()
 })
-it.only('testa a página da política de privacidade de forma independente', function(){
+it('testa a página da política de privacidade de forma independente', function(){
     cy.get('a').invoke('removeAttr', 'target')
     .click()
     cy.get('#title').should('have.text', 'CAC TAT - Política de privacidade')
